@@ -1,0 +1,2 @@
+# Africanshop
+The africanshop theme
