@@ -10,5 +10,6 @@
 
 
 		<?php wp_footer(); ?>
+		</div><!-- site_container -->
 	</body>
 </html>

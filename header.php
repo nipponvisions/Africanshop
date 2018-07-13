@@ -11,21 +11,21 @@
 
 		<?php wp_head(); ?>
 	</head>
+	<body>
 
-<div class="body">
-	<div class="header"> 
-		<div class="headerimg"></div>
+		<div class="site_container">
+		
+				<div class="header">
 
-			<h1>  <a href="<?php echo get_option('home'); ?>"> 
-			<?php bloginfo('name'); ?></a>  </h1>
+					<h1><a href="<?php echo get_option('home'); ?>"> 
+						<?php bloginfo('name'); ?></a>  </h1>
+					
+					<div class="description">
+						<?php bloginfo('description') ?> 
+					</div><!-- description -->
+						
+						<?php  wp_nav_menu(); ?>
+				</div><!--header-->		
+	
 
-			<div class="description"> 
-				<?php bloginfo('description') ?> 
-
-
-			</div><!-- description --> 
-		</div><!-- headerimg -->
-
-<?php wp_nav_menu(); ?>
-
-</div><!-- header -->
+			<div class="content-area">
