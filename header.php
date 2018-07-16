@@ -26,6 +26,3 @@
 						
 						<?php  wp_nav_menu(); ?>
 				</div><!--header-->		
-	
-
-			<div class="content-area">

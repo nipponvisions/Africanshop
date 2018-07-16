@@ -50,12 +50,40 @@ add_action( 'widgets_init', 'africanshop_register_sidebars' );
 
 
 
-// unhook the WooCommerce wrappers
-// remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-// remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+// // unhook the WooCommerce wrappers:
+ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+//change pagination timezone_location_get
+ remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
+ add_action('woocommerce_before_shop_loop', 'woocommerce_pagination', 10);
 
 
+ //add_action('woocommerce_before_main_content', 'africanshop_wrapper_start', 10);
+ //add_action('woocommerce_after_main_content', 'africanshop_wrapper_end', 10);
 
+		/*
+			 function africanshop_wrapper_start() {
+				?>
+			   <div class="contents_container"> 
+
+			<?php
+			}
+			function africanshop_wrapper_end() {
+			    ?>
+			    </div> <!--contents_container-->
+
+			<?php    
+			}
+		*/
+
+
+// remove_action('woocommerce_before_shop_loop', 'wc_print_notices', 10);
+// remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+// remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
+
+// add_action('woocommerce_before_shop_loop', 'africanshop_content_layout_start');
 
 
 
@@ -63,3 +91,17 @@ add_action( 'widgets_init', 'africanshop_register_sidebars' );
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
