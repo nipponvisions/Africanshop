@@ -41,12 +41,50 @@ li.menu-item{
 	border-right: 1px solid white;
 }
 
+
+/*BELOW HEADER */
+
+.notice{
+	border: 2px solid blue;
+	background-color: red;
+}
+
 .below_header{
 	border: 2px solid blue;
-	background-color: grey;
+	background-color: #f3d687;
 
 }
 
+nav.woocommerce-breadcrumb{
+
+}
+
+header.woocommerce-products-header{
+	border: 2px solid blue;
+
+
+}
+
+h1.woocommerce-products-header__title{
+
+}
+
+nav.woocommerce-pagination{
+	border: 2px solid blue;
+}
+
+ul.page-numbers{
+	background-color: pink;
+}
+
+ul.page-numbers li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+
+/*END BELOW HEADER  */
 
 .flex_container{
 
@@ -80,43 +118,79 @@ footer{
 
 
 
-/*display horizonataly */
+/*PRODUCT COLUMNS*/
 
 
-ul.products{
-	border: 1px solid blue;
+ul.products {
 
-/*	width: 70%;*/
-/*	width: 100%;*/
-	/*float: right;*/
-/*	clear: both;*/
+
 	margin: 0;
 	padding: 0;
 
 
 }
 
-.products li{
-	list-style: none;
-	border: 1px solid blue;
+
+ul.products li{
+	 	list-style: none;
+	 /*	background-color: pink;*/
+	
 }
 
-.columns-3 li{
-/*	border: 1px solid blue;*/
-	display: inline-block;
-	width: 25%;
 
+ul.columns-3 {
+	background-color: #ffefc0;
+
+}
+
+/* DEFAULT COLUMN */
+ul.columns-3 li{
+
+	border: 2px solid blue;
+
+  	display: inline-block;
+  	 vertical-align: text-top;
+ 
+	width: 25%;
 	height: 300px;
 	margin: 8px;
-	text-align: center;	
-
-		
+	text-align: center;			
 }
 
-.columns-3 li img{
-	height: 100px;
-	width: 100px;
+
+ul.columns-2 li{
+
+	border: 2px solid blue;
+
+  	display: inline-block;
+  	 vertical-align: text-top;
+ 
+	width: 40%;
+	height: 300px;
+	margin: 8px;
+	text-align: center;			
 }
+
+ul.columns-4 li{
+
+	border: 2px solid blue;
+
+  	display: inline-block;
+  	 vertical-align: text-top;
+ 
+	width: 22%;
+	height: 300px;
+	margin: 8px;
+	text-align: center;			
+}
+
+
+
+
+
+
+
+
 
 
 
