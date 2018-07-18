@@ -70,17 +70,60 @@ h1.woocommerce-products-header__title{
 }
 
 nav.woocommerce-pagination{
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
 }
 
 ul.page-numbers{
-	background-color: pink;
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0;
+
 }
 
 ul.page-numbers li{
 	list-style: none;
 	display: inline-block;
 }
+
+p.woocommerce-result-count{
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.woocommerce-ordering{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ul.before_shop_loop{
+	border: 2px solid black;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+	li.before_shop_loop{
+
+		list-style: none;
+		flex-grow: 1;
+		padding-right: 5px;
+		border-right: 2px solid black;
+	}
+
+/*.african_shop_pagination{
+	flex-grow: 3;
+}
+.africanshop_catalog_ordering{
+	flex-grow: 3;
+
+}
+.africanshop_result_count{
+	flex-grow: 3;
+}
+*/
 
 
 
@@ -106,6 +149,11 @@ ul.page-numbers li{
 	border: 2px solid blue;
 	/*flex-grow: 4;*/
 	min-width: 250px;
+}
+
+.sidebar{
+	border: 2px solid blue;
+	background-color: grey;
 }
 
 
@@ -183,8 +231,6 @@ ul.columns-4 li{
 	margin: 8px;
 	text-align: center;			
 }
-
-
 
 
 

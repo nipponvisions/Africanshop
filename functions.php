@@ -72,9 +72,65 @@ add_action( 'widgets_init', 'africanshop_register_sidebars' );
  remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
  remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
-//change pagination timezone_location_get
+
+
+//uhook * see  new hook 'africanshop_before_shop_loop'
+ remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+ remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+ remove_action('woocommerce_before_shop_loop', 'wc_print_notices', 10);
  remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
- add_action('woocommerce_before_shop_loop', 'woocommerce_pagination', 10);
+
+
+
+
+ remove_action('woocommerce_before_main_content', 'WC_Structured_Data::generate_website_data()', 30);
+ remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+//new to the hook
+ add_action('africanshop_before_main_content', 'africanshop_output_content_wrapper');  
+	function africanshop_output_content_wrapper(){
+	 	?>
+	 	<div class="below_header"> 
+
+	 	<?php
+	 }
+
+ //add_action('africanshop_before_main_content', 'WC_Structured_Data::generate_website_data()', 30);
+ add_action('africanshop_before_main_content', 'woocommerce_breadcrumb', 20);
+
+
+
+// create hook africanshop_before_shop_loop  to replace woocommerce_before_shop_loop
+function africanshop_before_shop_loop_contents(){
+	add_action('african_shop_pagination', 'woocommerce_pagination', -10); 
+	add_action('african_shop_catalog_odering', 'woocommerce_catalog_ordering', -30);
+	add_action('africanshop_result_count', 'woocommerce_result_count', -20);
+	add_action('africanshop_print_notices', 'wc_print_notices', -10);
+
+	?>
+	<ul class="before_shop_loop">
+		<!-- <li class="before_shop_loop"> <?php  get_template_part('/woocommerce/product-searchform'); ?> </li> -->
+
+
+		<li class="before_shop_loop"> <?php get_template_part('woocommerce/product-searchform'); ?> </li> 
+		<li class="before_shop_loop"> <?php do_action('african_shop_pagination'); ?> </li>
+		<li class="before_shop_loop"> <?php do_action('african_shop_catalog_odering'); ?>  </li>
+		<li class="before_shop_loop"> <?php do_action('africanshop_result_count'); ?> </li>
+
+		<!-- <li> <?php  do_action('africanshop_print_notices') ?> </li> -->
+
+	</ul><!--before_shop_loop -->
+
+
+<?php
+}
+
+add_action('africanshop_before_shop_loop','africanshop_before_shop_loop_contents');
+
+
+
+
+
 
 
  //add_action('woocommerce_before_main_content', 'africanshop_wrapper_start', 10);

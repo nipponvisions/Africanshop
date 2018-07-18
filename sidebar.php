@@ -11,6 +11,7 @@
 <div class="sidebar">
 
 <p> The  sidebar template </p>
+    <?php dynamic_sidebar(); ?>
 
 
 
