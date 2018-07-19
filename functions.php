@@ -84,7 +84,7 @@ add_action( 'widgets_init', 'africanshop_register_sidebars' );
 
 
  remove_action('woocommerce_before_main_content', 'WC_Structured_Data::generate_website_data()', 30);
- remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+ //remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
 //new to the hook
  add_action('africanshop_before_main_content', 'africanshop_output_content_wrapper');  

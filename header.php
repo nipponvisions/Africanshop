@@ -15,7 +15,7 @@
 
 		<div class="site_container">
 		
-				<div class="header">
+				<header class="african_shop">
 
 					<h1><a href="<?php echo get_option('home'); ?>"> 
 						<?php bloginfo('name'); ?></a>  </h1>
@@ -25,4 +25,4 @@
 					</div><!-- description -->
 						
 						<?php  wp_nav_menu(); ?>
-				</div><!--header-->		
+				</header><!--header-->		

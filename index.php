@@ -19,10 +19,12 @@ if ( have_posts() ) {
 		// Post Content here
 		the_title();
 		the_content();
-		get_sidebar();
+	
 		//
 	} // end while
 } // end if
 ?>
+
+<?php 	get_sidebar(); ?>
 
 <?php get_footer(); ?>
