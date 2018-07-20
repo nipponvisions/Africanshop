@@ -32,6 +32,11 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
+<div class="flex_container">
+
+    <div class="flex_sidebar">
+
+
 		<?php
 		/**
 		 * woocommerce_sidebar hook.
@@ -40,7 +45,9 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
+</div><!--sidebar -->
 
+<div class="flex_main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php  wc_get_template_part( 'content', 'single-product' ); ?>
@@ -56,7 +63,11 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
+    </div><!-- flex_main-->
 
+
+
+</div><!--flex_container-->
 
 <?php get_footer( 'shop' );
 

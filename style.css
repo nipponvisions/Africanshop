@@ -240,14 +240,27 @@ ul.columns-4 li{
 
 .product{
 	border: 2px solid red;
-	background-color: orange;
-	width: 60%;
+	/*background-color: orange;*/
+
 
 }
 
+span.onsale{
+	display: block;
+	padding: 2px;
+	background-color: #ff7300;
+	width: 50px;
+	text-align: center;
+	font-size: x-large;
+
+}
+
+
+
 .woocommerce-product-gallery{
 	border: 2px solid green;
-	width: 400px;
+	width: 48%;
+	float: left;
 }
 
 ol.flex-control-nav{
@@ -274,14 +287,93 @@ ol.flex-control-nav{
 	height: 300px;
 
 }
+/*END GALLERY */
 
+
+/*SUMMARY START */
 .summary{
-	border: 2px solid red;
-	width: 400px;
+
+}
+
+
+.entry-summary{
+		border: 2px solid red;
+	width: 48%;
+	float: right;
+}
+
+h1.entry-title{
+	background-color: green;
+}
+
+p.price{
+	background-color: yellow;
+	text-align: center;
+
+}
+
+del{
+	border: 2px solid blue;
+	background-color: pink;
+	padding: 3px;
+	
+}
+
+ins{
+		border: 2px solid blue;
+	background-color: purple;
+	padding: 3px;
+
 }
 
 
 
+span.woocommerce-Price-amount{
+	padding: 3px;
+
+}
+
+span.amount{
+
+}
+
+span.woocommerce-Price-currencySymbol{
+
+	font-weight: bold;
+	color: red;
+	padding: 4px;
+}
+span.amount{
+	
+}
+/*SUMMARY  END */
+
+
+
+.woocommerce-tabs{
+	clear: both;
+}
+
+
+ul.tabs{
+	
+}
+
+ul.wc-tabs{
+	background-color: pink;
+	
+}
+
+
+li.description_tab{
+	list-style: none;
+}
+li.reviews_tab{
+	list-style: none;
+}
+li.additional_information_tab {
+	list-style: none;
+}
 
 
 
