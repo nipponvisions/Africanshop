@@ -234,8 +234,51 @@ ul.columns-4 li{
 
 
 
+/*GALLERY*/
 
 
+
+.product{
+	border: 2px solid red;
+	background-color: orange;
+	width: 60%;
+
+}
+
+.woocommerce-product-gallery{
+	border: 2px solid green;
+	width: 400px;
+}
+
+ol.flex-control-nav{
+	border: 2px solid blue;
+	background-color: pink;
+
+}
+
+.flex-control-nav li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+
+.flex-control-thumbs{
+	
+}
+
+
+.woocommerce-product-gallery__image a img{
+
+	width: 300px;
+	height: 300px;
+
+}
+
+.summary{
+	border: 2px solid red;
+	width: 400px;
+}
 
 
 
