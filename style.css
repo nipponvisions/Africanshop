@@ -15,21 +15,18 @@ html, body{
 
 .site_container{
 	
-	width: 1050px;
-	border: 4px solid green;
-	margin: auto;
-	min-height: 100%;
-	margin-bottom: 0;
-	padding-bottom: 60px;
-
-
-
-
+ 	min-height: 100%;
+    position: relative;
+    width: 1050px;
+    margin: auto;
+    border: 3px solid green;
 }
 
 header.african_shop{
-	border: 2px solid white;
-	background-color: pink;
+   background:.ff0;
+   padding:10px;
+   background-color: pink;
+   border: 2px solid blue;
 }
 
 
@@ -63,12 +60,11 @@ li.menu-item{
 }
 
 .below_header{
-	border: 2px solid blue;
-	background-color: #f3d687;
-
-
-   padding:10px;
+	border: 2px solid red;
+	padding:10px;
    padding-bottom:60px;   /* Height of the footer */
+   border:2px solid red;
+   background-color: grey;
 
 
 }
@@ -177,20 +173,14 @@ ul.before_shop_loop{
 
 
 
-footer{
-
-/*	background-color: pink;
-	border: 2px solid blue;
-	height: 60px;
-	margin-bottom: 0;
-*/
-
+footer.africanshop_footer{
 
    position:absolute;
- margin-bottom: 0;
-   width: 1050px;
+   bottom:0;
+   width:100%;
    height:60px;   /* Height of the footer */
-   background:#6cf;
+   background: pink;
+   border: 2px solid blue;
 
 }
 

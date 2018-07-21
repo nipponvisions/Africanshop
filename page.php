@@ -2,17 +2,17 @@
 /** 
 	*Template Name: page.php
  	*Author : Mathenge Moses
- 	*Description :  the most generic page after index
+ 	*Description :  the most generic page after index poweres the africanshop 
  **/
 
   ?>
 
-<?php   get_header('shop'); ?>
+<?php   get_header(); ?>
+
 <div  class="notice"> This is page.php </div>
 
 
            <?php
-
         /**
          * Hook: woocommerce_before_main_content.
          *
@@ -22,7 +22,6 @@
          * 
          */
         do_action( 'africanshop_before_main_content' );
-
         ?>
 
      

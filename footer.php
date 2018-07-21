@@ -5,12 +5,16 @@
 	*Description: the footer to the africanshop theme
 **/
 ?>			
-<footer> 
+			<footer class="africanshop_footer">
+
+				<h2> This is the footer </h2>
+
+				<?php wp_footer() ; ?> 	
 				
-					<h2> The footer template </h2>
-					
-				<?php wp_footer(); ?>
-			</footer>
-		</div><!-- site_container -->
+			</footer><!-- africanshop_footer-->
+		</div><!-- site_container --> 
 	</body>
 </html>
+
+
+
