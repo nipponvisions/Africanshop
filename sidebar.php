@@ -10,10 +10,7 @@
 	
 <div class="sidebar">
 
-<p> The  sidebar template </p>
-    <?php dynamic_sidebar(); ?>
-
-
-
+	<p> The  sidebar template </p>
+	    <?php dynamic_sidebar(); ?>
 
 </div><!-- sidebar --> 

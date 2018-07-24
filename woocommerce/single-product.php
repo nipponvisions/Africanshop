@@ -29,22 +29,31 @@ get_header( 'shop' ); ?>
 		*africanshop_before_main_content hook
 		*@hooked africanshop_output_content_wrapper
 	**/
-	//do_action('africanshop_before_main_content');
+	do_action('africanshop_before_main_content');
 	?>
 
-	<div class="below_header">
+<!-- 	<div class="below_header"> -->
 		<div class="flex_container">
-			
+	        <div class="flex_sidebar">
+	            <?php  get_sidebar('shop'); ?>  
+	        </div><!-- flex_sidebar -->
+	        <div class="flex_main">
+	        	<p>Flex Main </p>
 
-	
-      <div class="flex_sidebar">
 
 
-                    <?php  get_sidebar('shop'); ?>  
+		<?php 
+		while ( have_posts() ) : the_post(); ?>
 
-                </div><!--sidebar-->
+			<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
-                </div><!-- flex_sidebar -->
+		<?php endwhile; // end of the loop. 
+		?>
+
+	        </div><!-- flex_main -->
+	    </div><!-- flex_container -->
+
 	</div><!-- below_header --> 
+
 <?php get_footer( 'shop' );
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

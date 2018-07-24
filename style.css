@@ -23,7 +23,6 @@ html, body{
 }
 
 header.african_shop{
-   background:.ff0;
    padding:10px;
    background-color: pink;
    border: 2px solid blue;
@@ -60,16 +59,18 @@ li.menu-item{
 }
 
 .below_header{
-	border: 2px solid red;
-	padding:10px;
+	   border:3px solid white;
+/*	padding:10px;*/
    padding-bottom:60px;   /* Height of the footer */
-   border:2px solid red;
+
    background-color: grey;
 
 
 }
 
 nav.woocommerce-breadcrumb{
+	background-color: white;
+	border: 2px solid blue;
 
 }
 
@@ -153,8 +154,9 @@ ul.before_shop_loop{
 
 .flex_main{
 
-	border: 2px solid blue;
+	border: 2px solid orange;
 	/*flex-grow: 8;*/
+	background-color: #FC6;
 
 
 
@@ -164,11 +166,12 @@ ul.before_shop_loop{
 	border: 2px solid blue;
 	/*flex-grow: 4;*/
 	min-width: 250px;
+	background-color: #d4a444;
 }
 
 .sidebar{
 	border: 2px solid blue;
-	background-color: grey;
+	
 }
 
 
